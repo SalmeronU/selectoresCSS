@@ -1,0 +1,49 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.menu{
+  display: flex;
+  width: 100%;
+}
+
+.menu li{
+  padding: 10px;
+  min-width:110px;
+  position: relative;
+  background-color:gray;
+  color: white;
+  cursor: pointer;
+}
+
+ul li{
+  list-style: none;
+}
+
+.menu .sub-menu{
+  display: none;
+}
+
+.menu .item {
+  text-align: center;
+}
+
+.item:hover > .sub-menu{
+  display: block;
+  position: absolute;
+  width: fit-content;
+  top: 100%;
+  left: 0;
+}
+
+.sub-menu .item:hover{
+  background: black;
+}
+
+.sub-menu .item:hover .sub-menu{
+  left: 100%;
+  top:0;
+}
